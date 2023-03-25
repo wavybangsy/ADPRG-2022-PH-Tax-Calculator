@@ -117,15 +117,14 @@ func main() {
 
 	// call philHealth Calculator function
 	phlContri = philHealthCalc(salary)
-	//printRes("PhilHealth Contribution", phlContri)
 	
 	// call SSS Calculator function
 	sssContri = SSScalc(salary)
-	//printRes("SSS Contribution", sssContri)
+
 
 	// call PAGIBIG Calculator function
 	pgbContri = PAGIBIGcalc(salary)
-	//printRes("PAGIBIG Contribution", pgbContri)
+
 
 	totalContribution = phlContri + sssContri + pgbContri
 	taxableIncome = salary - totalContribution
