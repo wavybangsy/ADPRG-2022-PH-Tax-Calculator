@@ -14,7 +14,7 @@ func philHealthCalc(salary float32) float32 {
 		return ((salary * 0.040) / 2)
 		// if salary 90k and above
 	} else {
-		return 3200.00
+		return 3200.00/2
 	}
 }
 
