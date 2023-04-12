@@ -1,5 +1,5 @@
 /* April 12, 2023
-S - 11: Group 4
+S - 11: Group 3
 Submitted by:
 	Cabungcal, Mary Joselle
 	Culala, Mary Erika
