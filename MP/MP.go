@@ -1,3 +1,11 @@
+/* April 12, 2023
+S - 11: Group 4
+Submitted by:
+	Cabungcal, Mary Joselle
+	Culala, Mary Erika
+	Tapia, John Lorenzo
+*/
+
 package main
 
 import (
@@ -8,13 +16,13 @@ import (
 func philHealthCalc(salary float32) float32 {
 	// if salary is 10k or below
 	if salary > 0 && salary <= 10000 {
-		return 450 / 2
+		return 400 / 2
 		// if salary is over 10k and below 90k
 	} else if salary > 10000.00 && salary <= 89999.99 {
-		return ((salary * 0.045) / 2)
+		return ((salary * 0.040) / 2)
 		// if salary 90k and above
 	} else {
-		return 4050.00
+		return 3200.00 / 2
 	}
 }
 
@@ -22,12 +30,12 @@ func philHealthCalc(salary float32) float32 {
 * TODO: Fill out the function
 **/
 func SSScalc(salary float32) float32 {
-	var sss float32 = 180.00
+	var sss float32 = 135.00
 	var multiplier int = 1
-	if salary >= 29750 {
-		sss = 1350
-	} else if salary > 4250 {
-		salary -= 4250.0
+	if salary >= 24750 {
+		sss = 1125.0
+	} else if salary >= 3250 {
+		salary -= 3250.0
 		multiplier += int(math.Floor(float64(salary) / float64(500)))
 		sss += float32(multiplier) * 22.50
 	}
@@ -59,15 +67,15 @@ func PAGIBIGcalc(salary float32) float32 {
 func wHDTax(taxableIncome float32) float32 {
 	switch {
 	case taxableIncome >= 20833 && taxableIncome <= 33332:
-		return (taxableIncome - 20833) * 0.15
+		return (taxableIncome - 20833) * 0.20
 	case taxableIncome >= 33333 && taxableIncome <= 66666:
-		return 1875.00 + (taxableIncome-33333)*0.20
+		return 2500.00 + (taxableIncome-33333)*0.25
 	case taxableIncome >= 66667 && taxableIncome <= 166666:
-		return 8541.80 + (taxableIncome-66667)*0.25
+		return 10833.33 + (taxableIncome-66667)*0.30
 	case taxableIncome >= 166667 && taxableIncome <= 666666:
-		return 33541.80 + (taxableIncome-166667)*0.30
+		return 40833.33 + (taxableIncome-166667)*0.32
 	case taxableIncome >= 666667:
-		return 183541.80 + (taxableIncome-666667)*0.35
+		return 200833.33 + (taxableIncome-666667)*0.35
 	default:
 		return 0.0
 	}
