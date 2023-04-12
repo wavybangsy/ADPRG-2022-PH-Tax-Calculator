@@ -1,10 +1,11 @@
-/* April 12, 2023
-S - 11: Group 3
-Submitted by:
+/********************
+Name:
 	Cabungcal, Mary Joselle
 	Culala, Mary Erika
 	Tapia, John Lorenzo
-*/
+Language: Go
+Paradigm: Procedural
+********************/
 
 package main
 
