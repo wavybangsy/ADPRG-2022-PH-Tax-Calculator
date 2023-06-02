@@ -1,4 +1,4 @@
-# ADPRG-2022-PH-Tax-Calculator
+# ADPRG 2022 PH Tax Calculator
 A 2022 Philippine Tax Calculator
 
 This is a tax calculator written in Go Language. 
